@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
@@ -13,6 +12,7 @@ import Orders from './pages/orders/Orders';
 import Messages from './pages/messages/Messages';
 import Message from './pages/message/Message';
 import MyGigs from './pages/myGigs/MyGigs';
+import './styles/globalStyles.scss';
 
 const App = () => {
   const Layout = () => {
