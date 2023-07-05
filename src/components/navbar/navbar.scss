@@ -5,6 +5,9 @@ nav {
   align-items: center;
   background-color: #013914;
   color: white;
+  position: sticky;
+  top: 0;
+  transition: all 0.5s ease;
 
   &.active {
     background-color: white;
@@ -49,6 +52,53 @@ nav {
       gap: 20px;
       align-items: center;
       font-weight: 500;
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+
+        .user__img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .options {
+          position: absolute;
+          top: 78px;
+          right: 130px;
+          padding: 12px;
+          background-color: white;
+          border-radius: 10px;
+          z-index: 999;
+          border: 1px solid lightgrey;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 120px;
+          font-weight: 300;
+          color: gray;
+
+          &.active {
+            display: flex;
+          }
+
+          a {
+            text-decoration: none;
+            color: black;
+            font-size: 0.8rem;
+            font-weight: 300;
+            cursor: pointer;
+
+            &:hover {
+              color: #1dbf73;
+            }
+          }
+        }
+      }
 
       button {
         background-color: transparent;

@@ -4,18 +4,22 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
+  const [open, setOpen] = useState(false);
 
-  const isActive = () => {
+  const isActive = () =>
     window.scrollY > 0 ? setActive(true) : setActive(false);
-  };
 
   useEffect(() => {
     window.addEventListener('scroll', isActive);
 
-    return () => {
-      window.removeEventListener('scroll', isActive);
-    };
+    return () => window.removeEventListener('scroll', isActive);
   }, []);
+
+  const currentUser = {
+    id: 1,
+    username: 'Anna',
+    isSeller: true,
+  };
 
   return (
     <nav className={active ? 'navbar active' : 'navbar'}>
@@ -30,9 +34,47 @@ const Navbar = () => {
           <p>Flybeer Business</p>
           <p>Explore</p>
           <p>English</p>
-          <p>Sign in</p>
-          <p>Become a Seller</p>
-          <button>Join</button>
+          {!currentUser?.isSeller && <span>Become a Seller</span>}
+          {currentUser ? (
+            <div className='user' onClick={() => setOpen(!open)}>
+              <img
+                className='user__img'
+                src='https://images.pexels.com/photos/4006576/pexels-photo-4006576.jpeg'
+                alt='User profile'
+              />
+              <span>{currentUser?.username}</span>
+              {open && (
+                <div className='options'>
+                  {currentUser.isSeller && (
+                    <>
+                      <Link className='link' to='/mygigs'>
+                        Gigs
+                      </Link>
+                      <Link className='link' to='/add'>
+                        Add New Gig
+                      </Link>
+                    </>
+                  )}
+                  <Link className='link' to='/orders'>
+                    Orders
+                  </Link>
+                  <Link className='link' to='/messages'>
+                    Messages
+                  </Link>
+                  <Link className='link' to='/'>
+                    Logout
+                  </Link>
+                </div>
+              )}
+            </div>
+          ) : (
+            <>
+              <span>Sign in</span>
+              <Link className='link' to='/register'>
+                <button>Join</button>
+              </Link>
+            </>
+          )}
         </div>
       </div>
       {active && (
