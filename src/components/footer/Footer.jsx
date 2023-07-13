@@ -82,10 +82,10 @@ function Footer() {
           </div>
           <div className='right'>
             <div className='social'>
-              <img src={twitter} alt='' />
-              <img src={facebook} alt='' />
-              <img src={linkedIn} alt='' />
-              <img src={instagram} alt='' />
+              <img src={twitter} alt='twiiter icon' />
+              <img src={facebook} alt='facebook icon' />
+              <img src={linkedIn} alt='linkedin icon' />
+              <img src={instagram} alt='instagram icon' />
             </div>
             <div className='link'>
               <img src={language} alt='' />

@@ -3,6 +3,8 @@ export { default as search } from './search.png';
 export { default as check } from './check.png';
 export { default as accessibility } from './accessibility.png';
 export { default as coin } from './coin.png';
+export { default as star } from './star.png';
+export { default as heart } from './heart.png';
 export { default as language } from './language.png';
 export { default as facebook } from './facebook.png';
 export { default as twitter } from './twitter.png';
