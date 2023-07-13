@@ -5,7 +5,7 @@ import TrustedBy from '../../components/trustedBy/TrustedBy';
 import Slide from '../../components/slide/Slide';
 import { cards } from '../../data';
 import CategoryCard from '../../components/categoriesGigs/CategoryCard';
-import { search } from '../../assets';
+import { check } from '../../assets';
 
 const Home = () => {
   return (
@@ -22,7 +22,7 @@ const Home = () => {
           <div className='item'>
             <h1>A whole world of freelance talent at your fingertips</h1>
             <div className='title'>
-              <img src='./img/check.png' alt='' />
+              <img src={check} alt='' />
               The best for every budget
             </div>
             <p>
@@ -30,15 +30,15 @@ const Home = () => {
               just project-based pricing.
             </p>
             <div className='title'>
-              <img src='./img/check.png' alt='' />
-              Quality work done quickly
+              <img src={check} alt='Check icon' />
+              Quality work done quicklyyy
             </div>
             <p>
               Find the right freelancer to begin working on your project within
               minutes.
             </p>
             <div className='title'>
-              <img src='./img/check.png' alt='' />
+              <img src={check} alt='Check icon' />
               Protected payments, every time
             </div>
             <p>
@@ -46,7 +46,7 @@ const Home = () => {
               until you approve the work.
             </p>
             <div className='title'>
-              <img src='./img/check.png' alt='' />
+              <img src={check} alt='Check icon' />
               24/7 support
             </div>
             <p>
@@ -161,17 +161,17 @@ const Home = () => {
               dedicated to businesses
             </p>
             <div className='title'>
-              <img src='./img/check.png' alt='' />
+              <img src={check} alt='Check icon' />
               Connect to freelancers with proven business experience
             </div>
 
             <div className='title'>
-              <img src='./img/check.png' alt='' />
+              <img src={check} alt='Check icon' />
               Get matched with the perfect talent by a customer success manager
             </div>
 
             <div className='title'>
-              <img src='./img/check.png' alt='' />
+              <img src={check} alt='Check icon' />
               Manage teamwork and boost productivity with one powerful workspace
             </div>
             <button>Explore Liverr Business</button>

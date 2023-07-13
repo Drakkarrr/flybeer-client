@@ -1,0 +1,30 @@
+.category-card {
+  height: 344px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  padding: 0 10px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  span.desc {
+    font-weight: 300;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  span.title {
+    font-weight: 600;
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    font-size: 25px;
+    text-transform: capitalize;
+  }
+}
