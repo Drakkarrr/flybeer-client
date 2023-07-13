@@ -1,6 +1,6 @@
 .home {
   .features {
-    background-color: #33e48b;
+    background-color: #f1fdf7;
     display: flex;
     justify-content: center;
     padding: 100px 0px;
@@ -41,10 +41,11 @@
     }
 
     .container {
-      width: 1400px;
+      width: 100%;
+      padding: 10px 15px;
       display: flex;
       align-items: center;
-      gap: 200px;
+      gap: 100px;
       .item {
         display: flex;
         flex-direction: column;
@@ -60,8 +61,9 @@
           width: 100%;
         }
         h1 {
-          font-weight: 500;
+          font-weight: 700;
           margin-bottom: 10px;
+          color: green;
         }
         .title {
           display: flex;
@@ -69,7 +71,7 @@
           gap: 10px;
           font-weight: 500;
           font-size: 18px;
-          color: #666;
+          color: rgba(0, 0, 0, 0.918);
           img {
             width: 24px;
             height: 24px;
@@ -78,7 +80,7 @@
         p {
           font-size: 18px;
           font-weight: 300;
-          color: gray;
+          color: rgba(82, 79, 79, 0.856);
           line-height: 28px;
           letter-spacing: 1px;
         }
@@ -89,25 +91,26 @@
       }
     }
 
-    //   &.reverse {
-    //     background-color: #0d084d;
-    //     color: white;
-    //     .container {
-    //       flex-direction: row-reverse;
-    //     }
-    //   }
+    &.reverse {
+      background-color: #0d084d;
+      color: white;
+      .container {
+        flex-direction: row-reverse;
+      }
+    }
   }
 
   .explore {
     display: flex;
     justify-content: center;
     padding: 100px 0px;
+    text-align: center;
 
     .container {
       width: 1400px;
 
       h1 {
-        color: #555;
+        color: #fff;
       }
 
       .items {

@@ -55,7 +55,12 @@ const Home = () => {
             </p>
           </div>
           <div className='item'>
-            <video src='./img/video.mp4' controls />
+            <video
+              src='https://www.youtube.com/watch?v=L_Luvci3GbU'
+              controls
+              autoPlay
+              loop
+            />
           </div>
         </div>
       </div>
@@ -151,7 +156,7 @@ const Home = () => {
         <div className='container'>
           <div className='item'>
             <h1>
-              liverr <i>business</i>
+              Flybeer <i>business</i>
             </h1>
             <h1>
               A business solution designed for <i>teams</i>
@@ -174,7 +179,7 @@ const Home = () => {
               <img src={check} alt='Check icon' />
               Manage teamwork and boost productivity with one powerful workspace
             </div>
-            <button>Explore Liverr Business</button>
+            <button>Explore Flybeer Business</button>
           </div>
           <div className='item'>
             <img
