@@ -4,7 +4,7 @@
   color: #666;
   margin: 50px 0px;
   color: rgba(255, 255, 255, 0.637);
-  margin: 0 2rem;
+  padding: 0 2rem;
 
   img {
     width: 24px;
@@ -60,12 +60,14 @@
         .social {
           display: flex;
           gap: 20px;
+          cursor: pointer;
         }
 
         .link {
           display: flex;
           align-items: center;
           gap: 10px;
+          cursor: pointer;
         }
       }
     }
