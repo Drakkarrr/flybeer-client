@@ -6,6 +6,8 @@ import Slide from '../../components/slide/Slide';
 import { cards } from '../../data';
 import CategoryCard from '../../components/categoriesGigs/CategoryCard';
 import { check } from '../../assets';
+import { projects } from '../../data';
+import ProjectCard from '../../components/project-card/ProjectCard';
 
 const Home = () => {
   return (
@@ -189,6 +191,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Slide slidesToShow={4} arrowsScroll={4}>
+        {projects.map((card) => (
+          <ProjectCard key={card.id} card={card} />
+        ))}
+      </Slide>
     </div>
   );
 };
