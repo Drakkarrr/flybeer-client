@@ -5,7 +5,7 @@ import TrustedBy from '../../components/trustedBy/TrustedBy';
 import Slide from '../../components/slide/Slide';
 import { cards } from '../../data';
 import CategoryCard from '../../components/categoriesGigs/CategoryCard';
-import { check } from '../../assets';
+import { check, video } from '../../assets';
 import { projects } from '../../data';
 import ProjectCard from '../../components/project-card/ProjectCard';
 
@@ -57,12 +57,7 @@ const Home = () => {
             </p>
           </div>
           <div className='item'>
-            <video
-              src='https://www.youtube.com/watch?v=L_Luvci3GbU'
-              controls
-              autoPlay
-              loop
-            />
+            <video src={video} controls />
           </div>
         </div>
       </div>

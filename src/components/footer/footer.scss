@@ -26,6 +26,12 @@
         }
         span {
           font-weight: 300;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+            color: #ebe9e9;
+          }
         }
       }
     }

@@ -10,3 +10,4 @@ export { default as facebook } from './facebook.png';
 export { default as twitter } from './twitter.png';
 export { default as instagram } from './instagram.png';
 export { default as linkedIn } from './linkedin.png';
+export { default as video } from './video.mp4';
